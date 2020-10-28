@@ -53,6 +53,7 @@
     }
 }
 
+
 .nav {
     position: fixed;
     top: 0px;
@@ -62,7 +63,7 @@
     visibility: hidden;
 
     &.open {
-        visibility: visible;
+       // visibility: visible;
     }
 
     .menu-nav {
@@ -109,6 +110,7 @@
         }
     }
 }
+
 
 @for $i from 1 through 5 {
     .menu-nav_item:nth-child(#{$i}) {

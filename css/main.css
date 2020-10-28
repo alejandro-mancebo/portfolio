@@ -102,10 +102,6 @@
   visibility: hidden;
 }
 
-.nav.open {
-  visibility: visible;
-}
-
 .nav .menu-nav {
   display: -webkit-box;
   display: -ms-flexbox;
