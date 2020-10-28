@@ -53,7 +53,6 @@
     }
 }
 
-
 .nav {
     position: fixed;
     top: 0px;
@@ -110,7 +109,6 @@
         }
     }
 }
-
 
 @for $i from 1 through 5 {
     .menu-nav_item:nth-child(#{$i}) {
