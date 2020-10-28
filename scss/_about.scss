@@ -2,7 +2,7 @@
     padding-bottom: 2rem;
 
     &_bio-image {
-        height: 50vh;
+        height: 60vh;
         width: 100%;
         background: 
             linear-gradient(
@@ -23,8 +23,8 @@
     }
 
     &_bio {
-        width: 80%;
-        text-align: center;
+        width: 70%;
+        //text-align: center;
 
         .text-secondary {
             padding-bottom: 1rem;
