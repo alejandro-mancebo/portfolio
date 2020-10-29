@@ -102,6 +102,10 @@
   visibility: hidden;
 }
 
+.nav.open {
+  visibility: visible;
+}
+
 .nav .menu-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,7 +394,7 @@
     -webkit-transform: translateY(0);
             transform: translateY(0);
     height: 100%;
-    background: transparent;
+    background: #272727;
     text-align: right;
   }
   .nav .menu-nav_item {
