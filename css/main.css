@@ -13,8 +13,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.3)), to(rgba(39, 39, 39, 0.8))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.8)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left bottom, right top, from(rgba(39, 39, 39, 0.3)), to(rgba(39, 39, 39, 0.9))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right top, rgba(39, 39, 39, 0.3), rgba(39, 39, 39, 0.9)), url("../img/model-1.jpg") center top;
   background-size: cover;
 }
 
@@ -194,9 +194,6 @@
 .about {
   padding-bottom: 1.18rem;
   line-height: 1.4;
-  /*.copyright {
-        transform: rotate(-90deg) translate(3rem, 5rem);
-    }*/
 }
 
 .about p {
@@ -226,7 +223,7 @@
 }
 
 .about_goal {
-  width: 70%;
+  width: 92vw;
 }
 
 .about_goal .text-secondary {
@@ -234,19 +231,8 @@
 }
 
 .about .biography {
-  width: 70vw;
-  margin: 2rem auto 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-.about .biography_detail {
-  background: #414141;
-  padding: 0.5rem;
-  border-bottom: 2px solid #ff652f;
+  width: 92vw;
+  margin: 2rem auto 32px auto;
 }
 
 .about .biography_detail h2 {
@@ -255,12 +241,6 @@
 
 .about .biography_detail p:last-child {
   margin-bottom: .5rem;
-}
-
-.about .social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .projects {

@@ -19,6 +19,14 @@ $secondary-color: #ff652f;
     }
 }
 
+@function image-linear-gradient($color) {
+    @return linear-gradient(
+        to right top, 
+        rgba($color, 0.3),
+        rgba($color, 0.9)
+    );
+}
+
 @mixin media-sm {
     @media screen and (min-width: 479px) {
         @content;

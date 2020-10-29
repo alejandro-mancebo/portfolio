@@ -5,11 +5,7 @@
     align-items: center;
     text-align: center;
     background: 
-        linear-gradient(
-            to right, 
-            rgba($primary-color, 0.3),
-            rgba($primary-color, 0.8)
-        ),
+        image-linear-gradient($primary-color),
         url('../img/model-1.jpg') center top;
     background-size: cover;
 

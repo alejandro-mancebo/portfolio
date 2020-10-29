@@ -25,23 +25,23 @@
     }
 
     &_goal {
-        width: 70%;
+        width: 92vw;
         .text-secondary {
             padding-bottom: 1rem;
         }
     }
 
     .biography {
-        width: 70vw;
-        margin: 2rem auto 0 auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        width: 92vw;
+        margin: 2rem auto 32px auto;
+        //display: grid;
+        //grid-template-columns: 1fr;
+        //gap: 2rem;
      
         &_detail {
-            background: lighten($primary-color, 10%);
-            padding: 0.5rem;
-            border-bottom: 2px solid $secondary-color;
+            //background: lighten($primary-color, 10%);
+            //padding: 0.5rem;
+            //border-bottom: 2px solid $secondary-color;
 
             h2 {
                 margin: 0.5rem 0;
@@ -52,13 +52,4 @@
             }
         }
     }
-
-   .social-icons {
-        display: flex;
-       // flex-direction: column;
-    }
-
-   /*.copyright {
-        transform: rotate(-90deg) translate(3rem, 5rem);
-    }*/
 }
