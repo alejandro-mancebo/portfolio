@@ -1,3 +1,4 @@
+
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -52,7 +53,6 @@
         }
     }
 }
-
 
 .nav {
     position: fixed;
@@ -110,8 +110,6 @@
         }
     }
 }
-
-
 
 @for $i from 1 through 5 {
     .menu-nav_item:nth-child(#{$i}) {

@@ -20,7 +20,7 @@ $secondary-color: #ff652f;
 }
 
 @mixin media-sm {
-    @media screen and (min-width: 279px) {
+    @media screen and (min-width: 479px) {
         @content;
     }
 }
