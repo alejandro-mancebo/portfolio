@@ -192,14 +192,23 @@
 }
 
 .about {
-  padding-bottom: 2rem;
+  padding-bottom: 1.18rem;
+  line-height: 1.4;
+  /*.copyright {
+        transform: rotate(-90deg) translate(3rem, 5rem);
+    }*/
 }
 
-.about_bio-image {
-  height: 60vh;
+.about p {
+  margin-bottom: 2rem;
+  font-size: 1.03rem;
+}
+
+.about_goal-image {
+  height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.5)), to(rgba(39, 39, 39, 0.9))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.5), rgba(39, 39, 39, 0.9)), url("../img/model-1.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,19 +225,15 @@
           justify-content: flex-end;
 }
 
-.about_bio-image p {
-  margin-bottom: 2rem;
-}
-
-.about_bio {
+.about_goal {
   width: 70%;
 }
 
-.about_bio .text-secondary {
+.about_goal .text-secondary {
   padding-bottom: 1rem;
 }
 
-.about .jobs {
+.about .biography {
   width: 70vw;
   margin: 2rem auto 0 auto;
   display: -ms-grid;
@@ -238,33 +243,24 @@
   gap: 2rem;
 }
 
-.about .jobs_job {
+.about .biography_detail {
   background: #414141;
   padding: 0.5rem;
-  border-bottom: 5px solid #ff652f;
+  border-bottom: 2px solid #ff652f;
 }
 
-.about .jobs_job h2, .about .jobs_job h3 {
+.about .biography_detail h2 {
   margin: 0.5rem 0;
 }
 
-.about .jobs_job h6 {
-  margin: 0.3rem 0;
+.about .biography_detail p:last-child {
+  margin-bottom: .5rem;
 }
 
 .about .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.about footer {
-  -webkit-transform: rotate(-90deg) translate(3rem, 5rem);
-          transform: rotate(-90deg) translate(3rem, 5rem);
 }
 
 .projects {
@@ -382,6 +378,127 @@
           transform: rotate(-90deg) translate(3rem, 5rem);
 }
 
+.resume {
+  padding-bottom: 2rem;
+}
+
+.resume_bio-image {
+  height: 50vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.resume .topics {
+  width: 70vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.resume .topics_topic {
+  background: #414141;
+  padding: 0.5rem;
+  border-bottom: 5px solid #ff652f;
+}
+
+.resume .topics_topic h2, .resume .topics_topic h3 {
+  margin: 0.5rem 0;
+}
+
+.resume .topics_topic h6 {
+  margin: 0.3rem 0;
+}
+
+.resume .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.resume footer {
+  -webkit-transform: rotate(-90deg) translate(3rem, 5rem);
+          transform: rotate(-90deg) translate(3rem, 5rem);
+}
+
+@media screen and (min-width: 279px) {
+  .menu-btn {
+    visibility: visible;
+  }
+  .nav {
+    visibility: hidden;
+    /* .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            //background: transparent;
+            text-align: right;
+
+            &_item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &_link {
+                font-size: 1.5rem;
+            }
+        }*/
+  }
+  /*.social-icons {
+        bottom: 11rem;
+     }*/
+  .footer {
+    width: 100vw;
+    bottom: 0rem;
+    right: 0px;
+    background: #272727;
+  }
+  /*
+    .home {
+        &_name{
+            font-size: 3.5rem;
+        }
+    }
+
+    .about_bio {
+        font-size: 1.5rem;
+    }
+
+    .projects {
+        &_bio-image {
+            height: 40vh;
+        }
+        &_items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+*/
+}
+
 @media screen and (min-width: 768px) {
   .menu-btn {
     visibility: hidden;
@@ -394,7 +511,6 @@
     -webkit-transform: translateY(0);
             transform: translateY(0);
     height: 100%;
-    background: #272727;
     text-align: right;
   }
   .nav .menu-nav_item {
@@ -420,9 +536,19 @@
   .projects .text-secondary {
     font-size: 3rem;
   }
+  .footer {
+    width: auto;
+    bottom: 0.4rem;
+    right: 1px;
+    background: transparent;
+  }
+  .copyright {
+    -webkit-transform: rotate(-90deg) translate(3rem, 4rem);
+            transform: rotate(-90deg) translate(3rem, 4rem);
+  }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 991px) {
   .home_name {
     font-size: 4rem;
   }
@@ -430,9 +556,19 @@
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
+  .social-icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    bottom: 0px;
+  }
+  /*.copyright {
+        transform: rotate(-90deg) translate(3rem, 5rem);
+    }*/
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1024) {
   .home_name {
     font-size: 5rem;
   }

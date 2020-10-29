@@ -1,20 +1,14 @@
-.about {
-    padding-bottom: 1.18rem;
-    line-height: 1.4;
-   
-    p { 
-        margin-bottom: 2rem;
-       font-size: 1.03rem;
-    }
-    
-    &_goal-image {
+.resume {
+    padding-bottom: 2rem;
+
+    &_bio-image {
         height: 50vh;
         width: 100%;
         background: 
             linear-gradient(
             to right, 
-            rgba($primary-color, 0.5),
-            rgba($primary-color, 0.9)
+            rgba($primary-color, 0.9),
+            rgba($primary-color, 0.3)
         ),
         url('../img/model-1.jpg') center top;
         background-size: cover;
@@ -24,41 +18,36 @@
         justify-content: flex-end;
     }
 
-    &_goal {
-        width: 70%;
-        .text-secondary {
-            padding-bottom: 1rem;
-        }
-    }
-
-    .biography {
+   .topics {
         width: 70vw;
         margin: 2rem auto 0 auto;
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
      
-        &_detail {
+        &_topic {
             background: lighten($primary-color, 10%);
             padding: 0.5rem;
-            border-bottom: 2px solid $secondary-color;
+            border-bottom: 5px solid $secondary-color;
 
-            h2 {
+            h2, h3 {
                 margin: 0.5rem 0;
             }
 
-            p:last-child{
-                margin-bottom: .5rem;
+            h6 {
+                margin: 0.3rem 0;
             }
         }
     }
 
-   .social-icons {
+    .social-icons {
         display: flex;
-       // flex-direction: column;
+        flex-direction: column;
     }
 
-   /*.copyright {
+    footer {
         transform: rotate(-90deg) translate(3rem, 5rem);
-    }*/
+    }
+
+   
 }

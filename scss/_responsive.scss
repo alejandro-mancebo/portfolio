@@ -1,3 +1,66 @@
+@include media-sm {
+    .menu-btn {
+        visibility: visible;
+    }
+
+    .nav {
+        visibility: hidden;
+
+       /* .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            //background: transparent;
+            text-align: right;
+
+            &_item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &_link {
+                font-size: 1.5rem;
+            }
+        }*/
+        
+    }
+
+    /*.social-icons {
+        bottom: 11rem;
+     }*/
+
+    .footer {
+        width: 100vw;
+        bottom: 0rem;
+        right: 0px;
+        background: $primary-color;
+    }
+/*
+    .home {
+        &_name{
+            font-size: 3.5rem;
+        }
+    }
+
+    .about_bio {
+        font-size: 1.5rem;
+    }
+
+    .projects {
+        &_bio-image {
+            height: 40vh;
+        }
+        &_items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+*/
+}
+
+
 @include media-md {
     .menu-btn {
         visibility: hidden;
@@ -10,7 +73,7 @@
             display: block;
             transform: translateY(0);
             height: 100%;
-            background: $primary-color;
+            //background: transparent;
             text-align: right;
 
             &_item {
@@ -46,6 +109,21 @@
             font-size: 3rem;
         }
     }
+
+
+    .footer {
+        width: auto;
+        bottom: 0.4rem;
+        right: 1px;
+        background:transparent;
+    }
+
+    .copyright  {
+
+       transform: rotate(-90deg) translate(3rem, 4rem);
+    }
+
+   
 }
 
 @include media-lg {
@@ -59,7 +137,17 @@
         &_items {
             grid-template-columns: repeat(3, 1fr);
         }
+    } 
+
+    .social-icons {
+       // display: flex;
+        flex-direction: column;
+        bottom: 0px;
     }
+
+    /*.copyright {
+        transform: rotate(-90deg) translate(3rem, 5rem);
+    }*/   
 }
 
 

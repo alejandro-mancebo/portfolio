@@ -19,20 +19,26 @@ $secondary-color: #ff652f;
     }
 }
 
+@mixin media-sm {
+    @media screen and (min-width: 279px) {
+        @content;
+    }
+}
+
 @mixin media-md {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {//768px
         @content;
     }
 }
 
 @mixin media-lg {
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 991px) {//1024px
         @content;
     }
 }
 
 @mixin media-xl {
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1024) {//1600px
         @content;
     }
 }
