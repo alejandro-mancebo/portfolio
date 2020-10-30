@@ -1,5 +1,5 @@
-$primary-color: rgb(39, 39, 39);
-$secondary-color: #ff652f;
+$primary-color:#94825b; // #5d7492; //rgb(155, 148, 148);
+$secondary-color: #dfd438; //#d4df38 ; //#ff652f;
 
 * {
     box-sizing: border-box;
@@ -19,6 +19,16 @@ $secondary-color: #ff652f;
     }
 }
 
+@function menu-over-backgroung() {
+   $current-screen: 768;
+    @if $current-screen {
+       @return transparent;
+    } @else {
+        @return  $primary-color;
+    }
+   
+}
+
 @function image-linear-gradient($color) {
     @return linear-gradient(
         to right top, 
@@ -35,7 +45,7 @@ $secondary-color: #ff652f;
 
 @mixin media-md {
     @media screen and (min-width: 768px) {//768px
-        @content;
+        @content;       
     }
 }
 
@@ -50,3 +60,4 @@ $secondary-color: #ff652f;
         @content;
     }
 }
+

@@ -3,6 +3,7 @@ const hamburger = document.querySelector('.menu-btn_burger');
 const nav = document.querySelector('.nav');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.menu-nav_item');
+const menuHome = document.querySelector('.menu-home');
 
 
 let showMenu = false;
@@ -14,13 +15,20 @@ function toggleMenu() {
         menuNav.classList.add('open');
         navItems.forEach(item => item.classList.add('open'));
 
-        showMenu = true;        
+        if(window.innerWidth < 767) {
+            menuNav.classList.add('menu-over');
+            menuNav.classList.remove('menu-home');
+        }
+
+        showMenu = true;  
+             
     } else {
         hamburger.classList.remove('open');
         nav.classList.remove('open');
         menuNav.classList.remove('open');
         navItems.forEach(item => item.classList.remove('open'));
-
+        menuNav.classList.remove('menu-over');
+        menuNav.classList.add('menu-home');
         showMenu= false;
     }
 }

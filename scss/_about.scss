@@ -1,3 +1,4 @@
+
 .about {
     padding-bottom: 1.18rem;
     line-height: 1.4;
@@ -10,13 +11,8 @@
     &_goal-image {
         height: 50vh;
         width: 100%;
-        background: 
-            linear-gradient(
-            to right, 
-            rgba($primary-color, 0.5),
-            rgba($primary-color, 0.9)
-        ),
-        url('../img/model-1.jpg') center top;
+        background: image-linear-gradient($primary-color),
+            url('../img/model-1.jpg') center top;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -52,4 +48,8 @@
             }
         }
     }
+}
+
+.footer{
+   @include horizontal-footer;
 }

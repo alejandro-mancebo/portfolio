@@ -1,6 +1,7 @@
 @import 'config';
-@import 'home';
 @import 'menu';
+@import 'footer';
+@import 'home';
 @import 'about';
 @import 'projects';
 @import 'resume';
@@ -46,6 +47,7 @@ main {
     width: 100%;
 }
 
+/*
 footer {
     position: fixed;
     bottom: 0;
@@ -54,10 +56,9 @@ footer {
     width: 100vw;
     height: 48px;
     font-size: 1rem;
-    background: transparent;
+    background: $primary-color; //transparent;
     color: set-text-color($primary-color); 
    
-    
     .social-icons {
         position: absolute;
         left: 1rem;
@@ -80,5 +81,6 @@ footer {
 }
 
 .footer{
-    background: $primary-color;
+   //background: $primary-color;
 }
+*/
