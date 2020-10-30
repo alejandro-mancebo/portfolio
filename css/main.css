@@ -96,7 +96,7 @@
           justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: #94825b;
+  background: #5d7492;
   list-style-type: none;
   padding-right: 1rem;
   -webkit-transform: translateY(-100%);
@@ -123,7 +123,7 @@
 }
 
 .nav .menu-nav_item.active > a {
-  color: #dfd438;
+  color: #91795D;
 }
 
 .nav .menu-nav_link {
@@ -137,7 +137,7 @@
 }
 
 .nav .menu-nav_link:hover {
-  color: #dfd438;
+  color: #91795D;
 }
 
 .nav .menu-home {
@@ -177,8 +177,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left bottom, right top, from(rgba(148, 130, 91, 0.3)), to(rgba(148, 130, 91, 0.9))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right top, rgba(148, 130, 91, 0.3), rgba(148, 130, 91, 0.9)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left bottom, right top, from(rgba(93, 116, 146, 0.3)), to(rgba(93, 116, 146, 0.9))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right top, rgba(93, 116, 146, 0.3), rgba(93, 116, 146, 0.9)), url("../img/model-1.jpg") center top;
   background-size: cover;
 }
 
@@ -191,7 +191,7 @@
 }
 
 .home_name--last {
-  color: #dfd438;
+  color: #91795D;
   font-weight: 700;
 }
 
@@ -203,7 +203,7 @@
   z-index: 1;
   font-size: 1rem;
   height: 0;
-  background: #94825b;
+  background: #5d7492;
   color: #000;
 }
 
@@ -227,7 +227,7 @@
 }
 
 .home-footer .social-icons a:hover {
-  color: #dfd438;
+  color: #91795D;
 }
 
 .home-footer .copyright {
@@ -250,8 +250,8 @@
 .about_goal-image {
   height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, right top, from(rgba(148, 130, 91, 0.3)), to(rgba(148, 130, 91, 0.9))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right top, rgba(148, 130, 91, 0.3), rgba(148, 130, 91, 0.9)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left bottom, right top, from(rgba(93, 116, 146, 0.3)), to(rgba(93, 116, 146, 0.9))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right top, rgba(93, 116, 146, 0.3), rgba(93, 116, 146, 0.9)), url("../img/model-1.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,7 +297,7 @@
   width: 100vw;
   height: 50px;
   font-size: 1rem;
-  background: #94825b;
+  background: #5d7492;
   color: #000;
 }
 
@@ -315,7 +315,7 @@
 }
 
 .footer .social-icons a:hover {
-  color: #dfd438;
+  color: #91795D;
 }
 
 .footer .copyright {
@@ -332,8 +332,8 @@
 .projects_bio-image {
   height: 30vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(148, 130, 91, 0.9)), to(rgba(148, 130, 91, 0.3))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(148, 130, 91, 0.9), rgba(148, 130, 91, 0.3)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(93, 116, 146, 0.9)), to(rgba(93, 116, 146, 0.3))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(93, 116, 146, 0.9), rgba(93, 116, 146, 0.3)), url("../img/model-1.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,7 +367,7 @@
 
 .projects_item {
   position: relative;
-  border-bottom: 5px solid #dfd438;
+  border-bottom: 5px solid #91795D;
   overflow: hidden;
   cursor: pointer;
 }
@@ -383,7 +383,7 @@
   left: 0px;
   height: 100%;
   width: 100%;
-  background: #dfd438;
+  background: #91795D;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -447,8 +447,8 @@
 .resume_bio-image {
   height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(148, 130, 91, 0.9)), to(rgba(148, 130, 91, 0.3))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(148, 130, 91, 0.9), rgba(148, 130, 91, 0.3)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(93, 116, 146, 0.9)), to(rgba(93, 116, 146, 0.3))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(93, 116, 146, 0.9), rgba(93, 116, 146, 0.3)), url("../img/model-1.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -476,9 +476,9 @@
 }
 
 .resume .topics_topic {
-  background: #ab9b77;
+  background: #798ea9;
   padding: 0.5rem;
-  border-bottom: 5px solid #dfd438;
+  border-bottom: 5px solid #91795D;
 }
 
 .resume .topics_topic h2, .resume .topics_topic h3 {
@@ -497,7 +497,7 @@
   width: 100vw;
   height: 50px;
   font-size: 1rem;
-  background: #94825b;
+  background: #5d7492;
   color: #000;
 }
 
@@ -515,7 +515,7 @@
 }
 
 .resume footer .social-icons a:hover {
-  color: #dfd438;
+  color: #91795D;
 }
 
 .resume footer .copyright {
@@ -575,7 +575,7 @@
     z-index: 1;
     font-size: 1rem;
     height: 0;
-    background: #94825b;
+    background: #5d7492;
     color: #000;
     background: red;
   }
@@ -597,7 +597,7 @@
     transition: all 0.5s ease-in-out;
   }
   .footer .social-icons a:hover {
-    color: #dfd438;
+    color: #91795D;
   }
   .footer .copyright {
     position: fixed;
@@ -642,7 +642,7 @@
 }
 
 body {
-  background: #94825b;
+  background: #5d7492;
   color: #000;
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -659,7 +659,7 @@ a {
 }
 
 .text-secondary {
-  color: #dfd438;
+  color: #91795D;
 }
 
 header {
@@ -672,7 +672,7 @@ header {
 }
 
 .header {
-  background: #94825b;
+  background: #5d7492;
 }
 
 main {
