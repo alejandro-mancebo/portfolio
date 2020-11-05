@@ -1,4 +1,5 @@
 
+
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -7,6 +8,7 @@
   height: 20px;
   width: 28px;
   cursor: pointer;
+ 
   @include transition-ease;
 
   &_burger {
@@ -39,7 +41,7 @@
       }
 
       &.open {
-          transform: rotate(720deg);
+          transform: rotate(180deg);
           background: transparent;
 
           &::before {
@@ -101,7 +103,7 @@
             font-size: 2rem;
             text-transform: uppercase;
             padding: 2rem 0;
-            font-weight: 300;
+            font-weight: 400;
             @include transition-ease;
 
             &:hover {
@@ -120,3 +122,4 @@
         transition-delay: ($i * 0.1s) + 0.15s;
     }
 }
+

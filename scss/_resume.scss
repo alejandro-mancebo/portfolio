@@ -1,25 +1,31 @@
-.resume {
+
+.resume {   
     padding-bottom: 2rem;
+    line-height: 1.5;
+   
+    p { 
+       font-size: 1.05rem;
+    }
 
     &_bio-image {
-        height: 50vh;
+        height: 25vh;
         width: 100%;
-        background: 
-            linear-gradient(
-            to right, 
-            rgba($primary-color, 0.9),
-            rgba($primary-color, 0.3)
-        ),
-        url('../img/model-1.jpg') center top;
+        background: image-linear-gradient($primary-color),
+            url('../img/model-1.jpg') center top;
         background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
+
+        .text-secondary {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
     }
 
    .topics {
-        width: 70vw;
+        width: 100vw;
         margin: 2rem auto 0 auto;
         display: grid;
         grid-template-columns: 1fr;
@@ -38,6 +44,10 @@
                 margin: 0.3rem 0;
             }
         }
+    }
+
+    .topics:last-child {
+        margin-bottom: 2rem;
     }
 
     footer {

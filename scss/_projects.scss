@@ -1,16 +1,11 @@
 .projects {
     padding-bottom: 2rem;
-
+    
     &_bio-image {
         height: 30vh;
         width: 100%;
-        background: 
-            linear-gradient(
-            to right, 
-            rgba($primary-color, 0.9),
-            rgba($primary-color, 0.3)
-        ),
-        url('../img/model-1.jpg') center top;
+         background: image-linear-gradient($primary-color),
+            url('../img/model-1.jpg') center top;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -24,7 +19,7 @@
     }
 
     &_items {
-        width: 70vw;
+        width: 92vw;
         margin: 2rem auto 0 auto;
         display: grid;
         grid-template-columns: 1fr;
@@ -67,8 +62,8 @@
 
     &_btns {
        position: absolute;
-       top: 0;
-       height: 100%; 
+        bottom: 0;
+       height:70%; 
        width: 100%;
        z-index: 1;
        display: grid;
@@ -86,6 +81,13 @@
             color: set-text-color(set-text-color($secondary-color));
         }
     }
+
+    &_title {
+        grid-column: 1/3;
+        color: #fff
+
+    }
+    
 
     .social-icons {
         display: flex;

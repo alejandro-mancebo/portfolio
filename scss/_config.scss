@@ -37,12 +37,6 @@ $secondary-color: #91795D; //#dfd438; //#d4df38 ; //#ff652f;
     );
 }
 
-@mixin media-sm {
-    @media screen and (min-width: 479px) {
-        @content;
-    }
-}
-
 @mixin media-md {
     @media screen and (min-width: 768px) {//768px
         @content;       

@@ -44,13 +44,20 @@
         &_goal {
             width: 70vw;
         }
+    } 
 
-        .biography {
+    .resume {
+        .topics {
             width: 70vw;
         }
     }
 
+    .biography {
+        width: 70vw;
+    }
+
     .projects {
+        
         &_bio-image {
             height: 40vh;
         }
@@ -64,14 +71,14 @@
 
     .footer {        
         @include vertical-footer;
-        background: red;
-
-        
-    }   .copyright {
+        background: red;        
+    }   
+    
+    .copyright {
            // position: fixed;
            // right: 2rem;      
             transform: translateY(-6rem);
-        }
+    }
 }
 
 @include media-lg {
@@ -93,6 +100,9 @@
     .projects {
         &_items {
             grid-template-columns: repeat(3, 1fr);
+        }
+        &_items {
+            width: 70vw;
         }
     } 
 
