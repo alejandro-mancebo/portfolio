@@ -42,24 +42,7 @@
 
     @include media-screen-width(70vw);
 
-   /* .about {
-        &_goal {
-            width: 70vw;
-        }
-
-        .biography {
-            width: 70vw;
-        }
-    } 
-
-  
-
-    .biography {
-        width: 70vw;
-    }*/
-
     .resume {
-
         &_bio-image {
             height: 40vh;
         }
@@ -84,6 +67,16 @@
         }       
     }
 
+    .project-page {
+        &_bg-image {
+            height: 27vh;
+        }
+
+        .text-secondary {
+            font-size: 2.5rem;
+        }              
+    }
+
     .footer {        
         @include vertical-footer;
         background: red;        
@@ -103,29 +96,7 @@
         }
     }
 
-
     @include media-screen-width(60vw);
-
-  /*  .about {
-        &_goal {
-            width: 20vw;
-        }
-        .biography {
-            width: 60vw;
-        }
-    }*/
-
-    .projects {
-        &_items {
-           // grid-template-columns: repeat(2, 1fr);
-        }
-    } 
-
-    /*.footer {
-        @include vertical-footer;
-        bottom: 0;
-        background: red; // transparent; 
-    }*/
 }
 
 @include media-xl { //1600
@@ -135,9 +106,7 @@
         }
     }
 
-
     .resume {
-
         &_bio-image {
             height: 35vh;
         }
@@ -148,7 +117,6 @@
     }
 
     .projects {
-        
         .text-secondary {
             font-size: 2.75rem;
         }
@@ -157,24 +125,5 @@
             height: 35vh;
         }
     }
-
-   /* .about {
-        &_goal {
-            width: 60vw;
-        }
-        .biography {
-            width: 60vw;
-        }
-    }
-
-    .resume {
-        .topics {
-            width: 60vw;
-        }
-    }*/
-
-    /*.projects_bio-image {
-       height: 40vh;
-    }*/
-
 }
+

@@ -492,9 +492,6 @@
   background: #798ea9;
   padding: 0.5rem;
   border-bottom: 5px solid #91795D;
-  /*h6 {
-                margin: 0.3rem 0;
-            }*/
 }
 
 .resume .topics_topic_items {
@@ -563,6 +560,111 @@
           transform: translateY(16px);
 }
 
+.project-page {
+  padding-bottom: 2rem;
+}
+
+.project-page_bg-image {
+  height: 20vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, right top, from(rgba(93, 116, 146, 0.3)), to(rgba(93, 116, 146, 0.9))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right top, rgba(93, 116, 146, 0.3), rgba(93, 116, 146, 0.9)), url("../img/model-1.jpg") center top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.project-page_bg-image .text-secondary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-page .project_detail {
+  width: 100vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.project-page .project_detail_description {
+  background: #798ea9;
+  padding: 1rem;
+  border-bottom: 3px solid #91795D;
+}
+
+.project-page .project_detail_description h2 {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.project-page .project_detail_description h3 {
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.project-page .project_detail_description p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.project-page .project_detail_image {
+  padding: 0.3rem;
+  text-align: center;
+}
+
+.project-page .topics:last-child {
+  margin-bottom: 2rem;
+}
+
+.project-page footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 50px;
+  font-size: 1rem;
+  background: #5d7492;
+  color: #000;
+}
+
+.project-page footer .social-icons {
+  position: absolute;
+  left: 1rem;
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+.project-page footer .social-icons a {
+  padding: 0.4rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-page footer .social-icons a:hover {
+  color: #91795D;
+}
+
+.project-page footer .copyright {
+  position: absolute;
+  right: 2rem;
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+}
+
 @media screen and (min-width: 768px) {
   .menu-btn {
     visibility: hidden;
@@ -608,21 +710,9 @@
   .projects_items {
     width: 70vw;
   }
-  /* .about {
-        &_goal {
-            width: 70vw;
-        }
-
-        .biography {
-            width: 70vw;
-        }
-    } 
-
-  
-
-    .biography {
-        width: 70vw;
-    }*/
+  .project-page .project_detail {
+    width: 70vw;
+  }
   .resume_bio-image {
     height: 40vh;
   }
@@ -638,6 +728,12 @@
   .projects_items {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .project-page_bg-image {
+    height: 27vh;
+  }
+  .project-page .text-secondary {
+    font-size: 2.5rem;
   }
   .footer {
     z-index: 1;
@@ -698,19 +794,9 @@
   .projects_items {
     width: 60vw;
   }
-  /*  .about {
-        &_goal {
-            width: 20vw;
-        }
-        .biography {
-            width: 60vw;
-        }
-    }*/
-  /*.footer {
-        @include vertical-footer;
-        bottom: 0;
-        background: red; // transparent; 
-    }*/
+  .project-page .project_detail {
+    width: 60vw;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -729,23 +815,6 @@
   .projects_bio-image {
     height: 35vh;
   }
-  /* .about {
-        &_goal {
-            width: 60vw;
-        }
-        .biography {
-            width: 60vw;
-        }
-    }
-
-    .resume {
-        .topics {
-            width: 60vw;
-        }
-    }*/
-  /*.projects_bio-image {
-       height: 40vh;
-    }*/
 }
 
 body {

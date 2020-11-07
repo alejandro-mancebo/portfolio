@@ -1,3 +1,5 @@
+
+
 $primary-color:#5d7492;// #94825b;      //rgb(155, 148, 148);
 $secondary-color: #91795D; //#dfd438; //#d4df38 ; //#ff652f;
 
@@ -37,7 +39,6 @@ $secondary-color: #91795D; //#dfd438; //#d4df38 ; //#ff652f;
     );
 }
 
-
 @mixin media-md {
     @media screen and (min-width: 768px) {//768px table
         @content;       
@@ -55,7 +56,6 @@ $secondary-color: #91795D; //#dfd438; //#d4df38 ; //#ff652f;
         @content;
     }
 }
-
 
 @mixin media-screen-width($size-px) {
     .about {
@@ -80,6 +80,12 @@ $secondary-color: #91795D; //#dfd438; //#d4df38 ; //#ff652f;
 
     .projects {
         &_items {
+            width: $size-px;
+        }
+    }
+
+    .project-page {
+        .project_detail {
             width: $size-px;
         }
     }
