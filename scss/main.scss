@@ -29,6 +29,10 @@ a {
     color: $secondary-color;
 }
 
+.text-section {
+    color: darken($secondary-color,5%);
+}
+
 header {
     position: fixed;
     z-index: 2;

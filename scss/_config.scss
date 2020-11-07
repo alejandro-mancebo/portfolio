@@ -37,21 +37,51 @@ $secondary-color: #91795D; //#dfd438; //#d4df38 ; //#ff652f;
     );
 }
 
+
 @mixin media-md {
-    @media screen and (min-width: 768px) {//768px
+    @media screen and (min-width: 768px) {//768px table
         @content;       
     }
 }
 
 @mixin media-lg {
-    @media screen and (min-width: 991px) {//1024px
+    @media screen and (min-width: 1024px) {//1024px laptop  ---- 991?
         @content;
     }
 }
 
 @mixin media-xl {
-    @media screen and (min-width: 1024) {//1600px
+    @media screen and (min-width: 1600px) {//1600px pc ---- 1024?
         @content;
+    }
+}
+
+
+@mixin media-screen-width($size-px) {
+    .about {
+        &_goal {
+            width: $size-px;
+        }
+
+        .biography {
+            width: $size-px;
+        }
+    } 
+
+    .resume {
+        .topics {
+            width: $size-px;
+        }
+    }
+
+    .biography {
+        width: $size-px;
+    }
+
+    .projects {
+        &_items {
+            width: $size-px;
+        }
     }
 }
 

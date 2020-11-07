@@ -286,7 +286,7 @@
 }
 
 .about .biography_detail p:last-child {
-  margin-bottom: .5rem;
+  margin-bottom: 3rem;
 }
 
 .footer {
@@ -450,15 +450,10 @@
 
 .resume {
   padding-bottom: 2rem;
-  line-height: 1.5;
-}
-
-.resume p {
-  font-size: 1.05rem;
 }
 
 .resume_bio-image {
-  height: 25vh;
+  height: 30vh;
   width: 100%;
   background: -webkit-gradient(linear, left bottom, right top, from(rgba(93, 116, 146, 0.3)), to(rgba(93, 116, 146, 0.9))), url("../img/model-1.jpg") center top;
   background: linear-gradient(to right top, rgba(93, 116, 146, 0.3), rgba(93, 116, 146, 0.9)), url("../img/model-1.jpg") center top;
@@ -497,14 +492,35 @@
   background: #798ea9;
   padding: 0.5rem;
   border-bottom: 5px solid #91795D;
+  /*h6 {
+                margin: 0.3rem 0;
+            }*/
 }
 
-.resume .topics_topic h2, .resume .topics_topic h3 {
+.resume .topics_topic_items {
+  margin-left: 1.5rem;
+}
+
+.resume .topics_topic_items_p {
+  margin-bottom: 1rem;
+}
+
+.resume .topics_topic h2 {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.resume .topics_topic h3 {
+  font-weight: 500;
   margin: 0.5rem 0;
 }
 
-.resume .topics_topic h6 {
-  margin: 0.3rem 0;
+.resume .topics_topic p, .resume .topics_topic li {
+  font-size: 1.0rem;
+  line-height: 1.3;
+}
+
+.resume .topics_topic li {
+  padding-bottom: 0.4rem;
 }
 
 .resume .topics:last-child {
@@ -580,11 +596,41 @@
   .about_goal {
     width: 70vw;
   }
+  .about .biography {
+    width: 70vw;
+  }
   .resume .topics {
     width: 70vw;
   }
   .biography {
     width: 70vw;
+  }
+  .projects_items {
+    width: 70vw;
+  }
+  /* .about {
+        &_goal {
+            width: 70vw;
+        }
+
+        .biography {
+            width: 70vw;
+        }
+    } 
+
+  
+
+    .biography {
+        width: 70vw;
+    }*/
+  .resume_bio-image {
+    height: 40vh;
+  }
+  .resume .text-secondary {
+    font-size: 2.5rem;
+  }
+  .projects .text-secondary {
+    font-size: 2.5rem;
   }
   .projects_bio-image {
     height: 40vh;
@@ -592,9 +638,6 @@
   .projects_items {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-  }
-  .projects .text-secondary {
-    font-size: 3rem;
   }
   .footer {
     z-index: 1;
@@ -636,7 +679,7 @@
   }
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 1024px) {
   .home_name {
     font-size: 4rem;
   }
@@ -646,13 +689,23 @@
   .about .biography {
     width: 60vw;
   }
-  .projects_items {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+  .resume .topics {
+    width: 60vw;
+  }
+  .biography {
+    width: 60vw;
   }
   .projects_items {
-    width: 70vw;
+    width: 60vw;
   }
+  /*  .about {
+        &_goal {
+            width: 20vw;
+        }
+        .biography {
+            width: 60vw;
+        }
+    }*/
   /*.footer {
         @include vertical-footer;
         bottom: 0;
@@ -660,13 +713,39 @@
     }*/
 }
 
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1600px) {
   .home_name {
     font-size: 5rem;
   }
-  .projects_bio-image {
-    height: 50vh;
+  .resume_bio-image {
+    height: 35vh;
   }
+  .resume .text-secondary {
+    font-size: 2.75rem;
+  }
+  .projects .text-secondary {
+    font-size: 2.75rem;
+  }
+  .projects_bio-image {
+    height: 35vh;
+  }
+  /* .about {
+        &_goal {
+            width: 60vw;
+        }
+        .biography {
+            width: 60vw;
+        }
+    }
+
+    .resume {
+        .topics {
+            width: 60vw;
+        }
+    }*/
+  /*.projects_bio-image {
+       height: 40vh;
+    }*/
 }
 
 body {
@@ -688,6 +767,10 @@ a {
 
 .text-secondary {
   color: #91795D;
+}
+
+.text-section {
+  color: #816c53;
 }
 
 header {

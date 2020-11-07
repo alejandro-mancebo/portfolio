@@ -1,6 +1,6 @@
 
 
-@include media-md {
+@include media-md { //768
     .menu-btn {
         visibility: hidden;
     }
@@ -40,33 +40,48 @@
         }
     }
 
-    .about {
+    @include media-screen-width(70vw);
+
+   /* .about {
         &_goal {
+            width: 70vw;
+        }
+
+        .biography {
             width: 70vw;
         }
     } 
 
-    .resume {
-        .topics {
-            width: 70vw;
-        }
-    }
+  
 
     .biography {
         width: 70vw;
+    }*/
+
+    .resume {
+
+        &_bio-image {
+            height: 40vh;
+        }
+
+        .text-secondary {
+            font-size: 2.5rem;            
+        }
     }
 
     .projects {
         
+        .text-secondary {
+            font-size: 2.5rem;
+        }
+
         &_bio-image {
             height: 40vh;
         }
+
         &_items {
             grid-template-columns: repeat(2, 1fr);
-        }
-        .text-secondary {
-            font-size: 3rem;
-        }
+        }       
     }
 
     .footer {        
@@ -81,28 +96,28 @@
     }
 }
 
-@include media-lg {
+@include media-lg { //1024
     .home {
         &_name {
             font-size: 4rem;
         }
     }
 
-    .about {
+
+    @include media-screen-width(60vw);
+
+  /*  .about {
         &_goal {
-            width: 60vw;
+            width: 20vw;
         }
         .biography {
             width: 60vw;
         }
-    }
+    }*/
 
     .projects {
         &_items {
-            grid-template-columns: repeat(3, 1fr);
-        }
-        &_items {
-            width: 70vw;
+           // grid-template-columns: repeat(2, 1fr);
         }
     } 
 
@@ -113,14 +128,53 @@
     }*/
 }
 
-@include media-xl {
+@include media-xl { //1600
     .home {
         &_name{
             font-size: 5rem;
         }
     }
 
-    .projects_bio-image {
-       height: 50vh;
+
+    .resume {
+
+        &_bio-image {
+            height: 35vh;
+        }
+
+        .text-secondary {
+            font-size: 2.75rem;            
+        }
     }
+
+    .projects {
+        
+        .text-secondary {
+            font-size: 2.75rem;
+        }
+
+        &_bio-image {
+            height: 35vh;
+        }
+    }
+
+   /* .about {
+        &_goal {
+            width: 60vw;
+        }
+        .biography {
+            width: 60vw;
+        }
+    }
+
+    .resume {
+        .topics {
+            width: 60vw;
+        }
+    }*/
+
+    /*.projects_bio-image {
+       height: 40vh;
+    }*/
+
 }
