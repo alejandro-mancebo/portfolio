@@ -596,7 +596,7 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 0rem;
 }
 
 .project-page .project_detail_description {
@@ -617,6 +617,17 @@
   line-height: 1.5;
 }
 
+.project-page .project_detail_description p:last-child {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.project-page .project_detail_description .github:hover {
+  color: #8C1100;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
 .project-page .project_detail_description_heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -631,10 +642,6 @@
 
 .project-page .project_detail_description_heading a {
   font-size: 1.2rem;
-}
-
-.project-page .project_detail_description_heading .github:hover {
-  color: #8C1100;
 }
 
 .project-page .project_detail_image {

@@ -24,7 +24,7 @@
         margin: 2rem auto 0 auto;
         display: grid;
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 0rem;
      
         &_description {
             // background: lighten($primary-color, 10%);
@@ -45,7 +45,17 @@
                 line-height: 1.5; 
             }
 
-            &_heading {
+            p:last-child {
+                  margin-top: 1rem;
+            }
+
+            .github:hover {
+                color: $secondary-color;
+                margin-top: 2rem;
+                font-size: 1.2rem;
+            }
+
+           /* &_heading {
                display: flex ;
                justify-content: space-between;
                align-items: center;
@@ -54,10 +64,8 @@
                    font-size: 1.2rem;
                }
                
-               .github:hover {
-                    color: $secondary-color;
-               }
-            }
+               
+            }*/
         }
 
         &_image {
