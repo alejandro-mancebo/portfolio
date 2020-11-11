@@ -69,6 +69,7 @@
     }
 
     .menu-nav {
+        font-family: $font-family-heading;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -80,6 +81,7 @@
         padding-right: 1rem;
         transform: translateY(-100%);
         @include transition-ease;
+       
 
         &.open {
             transform: translateY(0) ;
