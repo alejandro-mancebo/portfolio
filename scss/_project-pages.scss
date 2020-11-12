@@ -3,7 +3,7 @@
     padding-bottom: 2rem;
    
     &_bg-image {
-        height: 20vh;
+        height: $image-height - 200;
         width: 100%;
         background: image-linear-gradient($primary-color),
             url('../img/model-1.jpg') center top;

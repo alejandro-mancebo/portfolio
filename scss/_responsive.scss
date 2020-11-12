@@ -12,7 +12,6 @@
             display: block;
             transform: translateY(0);
             height: 100%;
-           // background: $primary-color;
             text-align: right;
 
             &_item {
@@ -23,10 +22,6 @@
             &_link {
                 font-size: 1.5rem;
             }
-        }
-
-        .menu-home {
-            background: transparent;
         }
 
         .menu-over {
@@ -42,9 +37,15 @@
 
     @include media-screen-width(70vw);
 
+    .about {
+        &_goal-image {
+            height: $image-height - 50;
+        }
+    }
+
     .resume {
         &_bio-image {
-            height: 40vh;
+            height: $image-height - 150;
         }
 
         .text-secondary {
@@ -53,13 +54,12 @@
     }
 
     .projects {
-        
         .text-secondary {
             font-size: 2.5rem;
         }
 
         &_bio-image {
-            height: 40vh;
+            height: $image-height - 150;
         }
 
         &_items {
@@ -69,7 +69,7 @@
 
     .project-page {
         &_bg-image {
-            height: 27vh;
+            height: $image-height - 150;
         }
 
         .text-secondary {
@@ -78,14 +78,11 @@
     }
 
     .footer {        
-        @include vertical-footer;
-        background: red;        
+        @include vertical-footer;        
     }   
     
     .copyright {
-           // position: fixed;
-           // right: 2rem;      
-            transform: translateY(-6rem);
+        transform: translateY(-6rem);
     }
 }
 
@@ -96,6 +93,12 @@
         }
     }
 
+    .about {
+        &_goal-image {
+            height: $image-height - 50;
+        }
+    }
+
     @include media-screen-width(60vw);
 }
 
@@ -103,6 +106,12 @@
     .home {
         &_name{
             font-size: 5rem;
+        }
+    }
+
+    .about {
+        &_goal-image {
+            height: $image-height - 50;
         }
     }
 

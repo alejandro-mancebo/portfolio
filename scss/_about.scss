@@ -9,7 +9,7 @@
     }
     
     &_goal-image {
-        height: 50vh;
+        height: $image-height; //60vh;
         width: 100%;
         background: image-linear-gradient($primary-color),
             url('../img/model-1.jpg') center top;

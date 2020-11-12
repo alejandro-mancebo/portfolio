@@ -1,8 +1,5 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+.header {
+  background: #003657;
 }
 
 .menu-btn {
@@ -15,6 +12,18 @@
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  /*
+    .menu-btn_burger-home {
+      background: $menu-background;
+      
+      &::before{
+        background: $menu-background;
+      }
+
+      &::after {
+        background: $menu-background;
+      }
+    }*/
 }
 
 .menu-btn_burger {
@@ -23,7 +32,7 @@
   top: 0.5rem;
   width: 28px;
   height: 3px;
-  background: #000;
+  background: #fff;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -34,7 +43,7 @@
   top: -8px;
   width: 28px;
   height: 3px;
-  background: #000;
+  background: #fff;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -45,7 +54,7 @@
   top: 8px;
   width: 28px;
   height: 3px;
-  background: #000;
+  background: #fff;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -97,7 +106,7 @@
           justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: #f5f1f2;
+  background: #003657;
   list-style-type: none;
   padding-right: 1rem;
   -webkit-transform: translateY(-100%);
@@ -123,26 +132,34 @@
           transform: translateX(0);
 }
 
+.nav .menu-nav_item a {
+  color: #fff;
+}
+
 .nav .menu-nav_item.active > a {
-  color: #8C1100;
+  color: #7ACCFF;
 }
 
 .nav .menu-nav_link {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
-  padding: 2rem 0;
+  padding: 1.6rem 0;
   font-weight: 400;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .nav .menu-nav_link:hover {
-  color: #8C1100;
+  color: #7ACCFF;
 }
 
-.nav .menu-home {
+.nav .menu-nav-home {
   background: transparent;
+}
+
+.nav .menu-nav-home a {
+  color: #000;
 }
 
 .menu-nav_item:nth-child(1) {
@@ -178,8 +195,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left bottom, right top, from(rgba(245, 241, 242, 0.3)), to(rgba(245, 241, 242, 0.9))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right top, rgba(245, 241, 242, 0.3), rgba(245, 241, 242, 0.9)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.9))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9)), url("../img/model-1.jpg") center top;
   background-size: cover;
 }
 
@@ -192,19 +209,25 @@
 }
 
 .home_name-last {
-  color: #8C1100;
+  color: #004b7a;
   font-weight: 700;
 }
 
-.home .menu-nav {
-  background: transparent;
-}
+/*.menu-nav {
+    background: transparent;
+}*/
+/*.menu-home {
+    //background: transparent;
 
+    a {
+        color: #000;
+    }
+}*/
 .home-footer {
   z-index: 1;
   font-size: 1rem;
   height: 0;
-  background: #f5f1f2;
+  background: #fff;
   color: #000;
 }
 
@@ -228,7 +251,7 @@
 }
 
 .home-footer .social-icons a:hover {
-  color: #8C1100;
+  color: #7ACCFF;
 }
 
 .home-footer .copyright {
@@ -249,10 +272,10 @@
 }
 
 .about_goal-image {
-  height: 50vh;
+  height: 385px;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, right top, from(rgba(245, 241, 242, 0.3)), to(rgba(245, 241, 242, 0.9))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right top, rgba(245, 241, 242, 0.3), rgba(245, 241, 242, 0.9)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.9))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9)), url("../img/model-1.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,7 +321,7 @@
   width: 100vw;
   height: 50px;
   font-size: 1rem;
-  background: #f5f1f2;
+  background: #fff;
   color: #000;
 }
 
@@ -316,7 +339,7 @@
 }
 
 .footer .social-icons a:hover {
-  color: #8C1100;
+  color: #7ACCFF;
 }
 
 .footer .copyright {
@@ -331,10 +354,10 @@
 }
 
 .projects_bio-image {
-  height: 30vh;
+  height: 185px;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, right top, from(rgba(245, 241, 242, 0.3)), to(rgba(245, 241, 242, 0.9))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right top, rgba(245, 241, 242, 0.3), rgba(245, 241, 242, 0.9)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.9))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9)), url("../img/model-1.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,7 +391,7 @@
 
 .projects_item {
   position: relative;
-  border-bottom: 5px solid #8C1100;
+  border-bottom: 5px solid #7ACCFF;
   overflow: hidden;
   cursor: pointer;
 }
@@ -384,7 +407,7 @@
   left: 0px;
   height: 100%;
   width: 100%;
-  background: #8C1100;
+  background: #7ACCFF;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -417,13 +440,13 @@
 
 .projects_btn {
   opacity: 0;
-  color: #fff;
+  color: #000;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .projects_btn:hover {
-  color: #000;
+  color: #fff;
 }
 
 .projects_title {
@@ -454,10 +477,10 @@
 }
 
 .resume_bio-image {
-  height: 30vh;
+  height: 185px;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, right top, from(rgba(245, 241, 242, 0.3)), to(rgba(245, 241, 242, 0.9))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right top, rgba(245, 241, 242, 0.3), rgba(245, 241, 242, 0.9)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.9))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9)), url("../img/model-1.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,7 +554,7 @@
   width: 100vw;
   height: 50px;
   font-size: 1rem;
-  background: #f5f1f2;
+  background: #fff;
   color: #000;
 }
 
@@ -549,7 +572,7 @@
 }
 
 .resume footer .social-icons a:hover {
-  color: #8C1100;
+  color: #7ACCFF;
 }
 
 .resume footer .copyright {
@@ -564,10 +587,10 @@
 }
 
 .project-page_bg-image {
-  height: 20vh;
+  height: 185px;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, right top, from(rgba(245, 241, 242, 0.3)), to(rgba(245, 241, 242, 0.9))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right top, rgba(245, 241, 242, 0.3), rgba(245, 241, 242, 0.9)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.9))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9)), url("../img/model-1.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -601,6 +624,17 @@
 
 .project-page .project_detail_description {
   padding: 1rem;
+  /* &_heading {
+               display: flex ;
+               justify-content: space-between;
+               align-items: center;
+
+               a {
+                   font-size: 1.2rem;
+               }
+               
+               
+            }*/
 }
 
 .project-page .project_detail_description h2 {
@@ -619,28 +653,11 @@
 
 .project-page .project_detail_description p:last-child {
   margin-top: 1rem;
-  font-size: 1.2rem;
 }
 
 .project-page .project_detail_description .github:hover {
-  color: #8C1100;
+  color: #7ACCFF;
   margin-top: 2rem;
-  font-size: 1.2rem;
-}
-
-.project-page .project_detail_description_heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.project-page .project_detail_description_heading a {
   font-size: 1.2rem;
 }
 
@@ -661,7 +678,7 @@
   width: 100vw;
   height: 50px;
   font-size: 1rem;
-  background: #f5f1f2;
+  background: #fff;
   color: #000;
 }
 
@@ -679,7 +696,7 @@
 }
 
 .project-page footer .social-icons a:hover {
-  color: #8C1100;
+  color: #7ACCFF;
 }
 
 .project-page footer .copyright {
@@ -710,9 +727,6 @@
   .nav .menu-nav_link {
     font-size: 1.5rem;
   }
-  .nav .menu-home {
-    background: transparent;
-  }
   .nav .menu-over {
     background: transparent;
   }
@@ -737,8 +751,11 @@
   .project-page .project_detail {
     width: 70vw;
   }
+  .about_goal-image {
+    height: 335px;
+  }
   .resume_bio-image {
-    height: 40vh;
+    height: 235px;
   }
   .resume .text-secondary {
     font-size: 2.5rem;
@@ -747,14 +764,14 @@
     font-size: 2.5rem;
   }
   .projects_bio-image {
-    height: 40vh;
+    height: 235px;
   }
   .projects_items {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
   .project-page_bg-image {
-    height: 27vh;
+    height: 235px;
   }
   .project-page .text-secondary {
     font-size: 2.5rem;
@@ -763,9 +780,8 @@
     z-index: 1;
     font-size: 1rem;
     height: 0;
-    background: #f5f1f2;
+    background: #fff;
     color: #000;
-    background: red;
   }
   .footer .social-icons {
     position: fixed;
@@ -785,7 +801,7 @@
     transition: all 0.5s ease-in-out;
   }
   .footer .social-icons a:hover {
-    color: #8C1100;
+    color: #7ACCFF;
   }
   .footer .copyright {
     position: fixed;
@@ -802,6 +818,9 @@
 @media screen and (min-width: 1024px) {
   .home_name {
     font-size: 4rem;
+  }
+  .about_goal-image {
+    height: 335px;
   }
   .about_goal {
     width: 60vw;
@@ -827,6 +846,9 @@
   .home_name {
     font-size: 5rem;
   }
+  .about_goal-image {
+    height: 335px;
+  }
   .resume_bio-image {
     height: 35vh;
   }
@@ -841,8 +863,15 @@
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
-  background: #f5f1f2;
+  background: #fff;
   color: #000;
   height: 100vh;
   font-family: "Roboto", sans-serif;
@@ -860,11 +889,11 @@ a {
 }
 
 .text-secondary {
-  color: #8C1100;
+  color: #7ACCFF;
 }
 
 .text-section {
-  color: #730e00;
+  color: #61c2ff;
 }
 
 header {
@@ -873,13 +902,11 @@ header {
   width: 100%;
   height: 48px;
   padding: 1rem;
-  background: transparent;
 }
 
-.header {
-  background: #f5f1f2;
-}
-
+/*.header {
+    background: $primary-color;
+}*/
 main {
   height: 100%;
   width: 100%;
