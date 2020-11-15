@@ -510,7 +510,7 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: .5rem;
 }
 
 .resume .topics_topic {
@@ -650,16 +650,30 @@
 .project-page .project_detail_description p {
   font-size: 1.205rem;
   line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
 
 .project-page .project_detail_description p:last-child {
-  margin-top: 1rem;
+  margin-bottom: 0rem;
 }
 
 .project-page .project_detail_description .github:hover {
   color: #7ACCFF;
   margin-top: 2rem;
   font-size: 1.2rem;
+}
+
+.project-page .project_detail_images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
 .project-page .project_detail_image {
@@ -777,6 +791,11 @@
   }
   .project-page .text-secondary {
     font-size: 2.5rem;
+  }
+  .project-page .project_detail_images {
+    width: 50vw;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
   .footer {
     z-index: 1;

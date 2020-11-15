@@ -75,7 +75,14 @@
 
         .text-secondary {
             font-size: 2.5rem;
-        }              
+        } 
+
+        .project_detail {
+            &_images { 
+                width: 50vw;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
     }
 
     .footer {        
