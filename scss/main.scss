@@ -33,11 +33,11 @@ a {
 }
 
 .text-secondary {
-    color: $secondary-color;
+    color: $text-secondary-color;
 }
 
 .text-section {
-    color: darken($secondary-color,5%);
+    color: darken($text-secondary-color,5%);
 }
 
 header {

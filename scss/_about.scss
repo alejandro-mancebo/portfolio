@@ -9,7 +9,7 @@
     }
     
     &_goal-image {
-        height: $image-height; //60vh;
+        height: $image-height - 200; //60vh;
         width: 100%;
         background: image-linear-gradient($primary-color),
             url('../img/model-1.jpg') center top;
@@ -18,18 +18,23 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-    }
 
-    &_goal {
-        width: 92vw;
         .text-secondary {
-            padding-bottom: 1rem;
+            font-size: 2rem;
+            margin-bottom: 2rem;
         }
     }
 
+    // &_goal {
+    //     width: 92vw;
+    //     .text-secondary {
+    //         padding-bottom: 1rem;
+    //     }
+    // }
+
     .biography {
-        width: 92vw;
-        margin: 2rem auto 32px auto;
+        width: 60vw;
+        margin: 2rem auto 0 auto;
         //display: grid;
         //grid-template-columns: 1fr;
         //gap: 2rem;

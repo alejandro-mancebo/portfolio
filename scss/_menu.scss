@@ -99,7 +99,7 @@
         @include transition-ease;
        
         &.open {
-            transform: translateY(0) ;
+            transform: translateY(0px) ;
             padding-right: 1rem;
         }
 
@@ -116,7 +116,7 @@
             }
 
             &.active > a {
-                color: $secondary-color;
+                color: $yellow-color; //#fdd935; //$secondary-color;
             }
         }
 
@@ -129,7 +129,7 @@
             @include transition-ease;
 
             &:hover {
-                color: $secondary-color
+                color: $yellow-color; //#fdd935; //$secondary-color
             }
         }
     }

@@ -5,7 +5,9 @@
 $primary-color:#fff;
 $secondary-color: #7ACCFF; 
 $accent-color:#196799;
+$yellow-color: #fdd935;
 
+$text-secondary-color: #196799; 
 $menu-background: #003657;
 
 //$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -62,9 +64,9 @@ $image-height: 385px;
             width: $size-px;
         }
 
-        .biography {
-            width: $size-px;
-        }
+        // .biography {
+        //     width: $size-px;
+        // }
     } 
 
     .resume {
@@ -73,9 +75,9 @@ $image-height: 385px;
         }
     }
 
-    .biography {
-        width: $size-px;
-    }
+    // .biography {
+    //     width: $size-px;
+    // }
 
     .projects {
         &_items {

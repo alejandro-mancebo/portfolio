@@ -127,27 +127,37 @@
 
     .about {
         &_goal-image {
-            height: $image-height - 50;
+            height: 35vh;;
+
+            .text-secondary {
+            font-size: 2.75rem;
         }
+        }
+
+        
     }
 
     .resume {
         &_bio-image {
             height: 35vh;
-        }
 
-        .text-secondary {
+             .text-secondary {
             font-size: 2.75rem;            
         }
+        }
+
+       
     }
 
     .projects {
-        .text-secondary {
-            font-size: 2.75rem;
-        }
-
+       
         &_bio-image {
-            height: 35vh;
+            height: 35vh; 
+            
+            .text-secondary {
+                 font-size: 2.75rem;
+            }
+
         }
     }
 }
