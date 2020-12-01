@@ -9,7 +9,7 @@
     }
     
     &_goal-image {
-        height: $image-height - 200; //60vh;
+        height: $image-height - 200;
         width: 100%;
         background: image-linear-gradient($primary-color),
             url('../img/model-1.jpg') center top;
@@ -25,25 +25,12 @@
         }
     }
 
-    // &_goal {
-    //     width: 92vw;
-    //     .text-secondary {
-    //         padding-bottom: 1rem;
-    //     }
-    // }
-
+   
     .biography {
-        width: 60vw;
+        width: 92vw;
         margin: 2rem auto 0 auto;
-        //display: grid;
-        //grid-template-columns: 1fr;
-        //gap: 2rem;
-     
-        &_detail {
-            //background: lighten($primary-color, 10%);
-            //padding: 0.5rem;
-            //border-bottom: 2px solid $secondary-color;
-
+        
+        &_detail {         
             h2 {
                 margin: 0.5rem 0;
             }

@@ -1,13 +1,13 @@
 
 
 .header {
-    background: $menu-background; //$primary-color;
+    background: $menu-background; 
 }
 
 .menu-btn {
   position: absolute;
   z-index: 1;
-  right: 1rem;  
+  right: 2rem;  
   top: 1rem;
   height: 20px;
   width: 28px;
@@ -58,18 +58,18 @@
           }
         }
     }
-/*
-    .menu-btn_burger-home {
-      background: $menu-background;
-      
-      &::before{
-        background: $menu-background;
-      }
+}
 
-      &::after {
-        background: $menu-background;
-      }
-    }*/
+.logo {
+    position: fixed;
+    z-index: 0;
+    left: 0.5rem;  
+    top: 0.1rem;      
+    cursor: pointer;
+    
+    img {
+        height: 35px;
+    }
 }
 
 .nav {
@@ -79,11 +79,13 @@
     width: 100vw;
     opacity: 0.98;
     visibility: hidden;
+    z-index: -1;
 
     &.open {
        visibility: visible;
     }
 
+   
     .menu-nav {
        font-family: $font-family-heading;
         display: flex;
@@ -92,7 +94,7 @@
         justify-content: center;
         height: 100vh;
         overflow: hidden;
-        background: $menu-background; //$primary-color;
+        background: $menu-background;
         list-style-type: none;
         padding-right: 1rem;
         transform: translateY(-100%);
@@ -116,7 +118,7 @@
             }
 
             &.active > a {
-                color: $yellow-color; //#fdd935; //$secondary-color;
+                color: $hover-color;
             }
         }
 
@@ -129,7 +131,7 @@
             @include transition-ease;
 
             &:hover {
-                color: $yellow-color; //#fdd935; //$secondary-color
+                color: $hover-color;
             }
         }
     }

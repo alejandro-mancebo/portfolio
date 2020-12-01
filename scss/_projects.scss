@@ -82,11 +82,11 @@
 
     &_btn {
         opacity: 0;
-        color: #fff; //set-text-color($secondary-color);
+        color: #fff;
         @include transition-ease;
 
         &:hover {
-            color: $yellow-color; //set-text-color(set-text-color($secondary-color));
+            color: $hover-color;
         }
     }
     
@@ -99,3 +99,5 @@
         transform: rotate(-90deg) translate(3rem, 5rem);
     }   
 }
+
+

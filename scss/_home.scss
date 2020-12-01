@@ -19,25 +19,13 @@
         border-bottom: 2px solid set-text-color($primary-color);
 
         &-last {
-            color: darken($secondary-color, 50%); //$accent-color; //$secondary-color;
+            color: darken($secondary-color, 50%); 
             font-weight: 700;
         }
     }    
 }
 
-/*.menu-nav {
-    background: transparent;
-}*/
-
-
-/*.menu-home {
-    //background: transparent;
-
-    a {
-        color: #000;
-    }
-}*/
-
 .home-footer {
     @include vertical-footer;
 }
+

@@ -5,6 +5,15 @@
         visibility: hidden;
     }
 
+    .logo {   
+       left: 0rem;  
+       top: 0.1rem;
+
+       img {
+           height: 60px;
+       }
+   }
+
     .nav {
         visibility: visible;
 
@@ -13,7 +22,7 @@
             transform: translateY(0);
             height: 100%;
             text-align: right;
-            padding-right: 5rem;
+            padding-right: 1rem;
 
             &_item {
                 display: inline;
@@ -40,27 +49,32 @@
 
     .about {
         &_goal-image {
-            height: $image-height - 50;
+            height: $image-height - 150;
+
+            .text-secondary {
+                font-size: 2.5rem;            
+            }
         }
     }
 
     .resume {
         &_bio-image {
             height: $image-height - 150;
-        }
 
-        .text-secondary {
-            font-size: 2.5rem;            
-        }
+            .text-secondary {
+                font-size: 2.5rem;            
+            }
+        }        
     }
 
     .projects {
-        .text-secondary {
-            font-size: 2.5rem;
-        }
-
+       
         &_bio-image {
             height: $image-height - 150;
+            
+            .text-secondary {
+                font-size: 2.5rem;
+            }
         }
 
         &_items {
@@ -71,11 +85,11 @@
     .project-page {
         &_bg-image {
             height: $image-height - 150;
+            
+            .text-secondary {
+                font-size: 2.5rem;
+            }       
         }
-
-        .text-secondary {
-            font-size: 2.5rem;
-        } 
 
         .project_detail {
             &_images { 
@@ -96,11 +110,15 @@
 
 @include media-lg { //1024
 
-
     .nav {
         .menu-nav {
-            padding-right: 15rem;
+            padding-right: 10rem;
         }
+    }
+
+    .logo {   
+        left: 10rem;  
+        top: 0.1rem;
     }
 
     .home {
@@ -111,7 +129,7 @@
 
     .about {
         &_goal-image {
-            height: $image-height - 50;
+            height: $image-height - 150;
         }
     }
 
@@ -119,6 +137,18 @@
 }
 
 @include media-xl { //1600
+
+    .nav {
+        .menu-nav {
+            padding-right: 15rem;
+        }
+    }
+
+    .logo {   
+        left: 15rem;  
+        top: 0.1rem;
+    }
+
     .home {
         &_name{
             font-size: 5rem;
@@ -127,26 +157,22 @@
 
     .about {
         &_goal-image {
-            height: 35vh;;
+            height: 35vh;
 
             .text-secondary {
-            font-size: 2.75rem;
+                font-size: 2.75rem;
+            }
         }
-        }
-
-        
     }
 
     .resume {
         &_bio-image {
             height: 35vh;
 
-             .text-secondary {
-            font-size: 2.75rem;            
-        }
-        }
-
-       
+            .text-secondary {
+                font-size: 2.75rem;            
+            }
+        } 
     }
 
     .projects {

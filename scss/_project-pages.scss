@@ -27,10 +27,7 @@
         gap: 0rem;
      
         &_description {
-            
-            // background: lighten($primary-color, 10%);
             padding: 1rem;
-            // border-bottom: 3px solid $secondary-color;
 
             h2 {
                 margin: 0.5rem 0 1rem 0;
@@ -48,29 +45,14 @@
             }
 
             p:last-child {
-                  //margin-top: 1rem;
-                  margin-bottom: 0rem;
+                margin-bottom: 0rem;
             }
 
             .github:hover {
                 color: $secondary-color;
                 margin-top: 2rem;
                 font-size: 1.2rem;
-            }
-
-           /* &_heading {
-               display: flex ;
-               justify-content: space-between;
-               align-items: center;
-
-               a {
-                   font-size: 1.2rem;
-               }
-               
-               
-            }*/
-
-           
+            } 
         }
 
         &_images {
@@ -81,7 +63,6 @@
             grid-template-columns: 1fr;
             gap: 1rem;
         }
-
 
         &_image {
             padding: 0.3rem;
