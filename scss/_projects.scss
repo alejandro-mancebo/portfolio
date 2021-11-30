@@ -67,8 +67,10 @@
        height: 45%; 
        width: 100%;
        z-index: 1;
+       display: -ms-grid;
        display: grid;
        grid-template-columns: repeat(2, 1fr);
+       -ms-grid-column: 1fr 1fr;
        align-items: center;
        text-align: center;
 
