@@ -78,7 +78,7 @@
         }
 
         &_items {
-            -ms-grid-column: 1fr 1fr;
+            display: grid; // Note: 1. Display GRID: -ms-grid-column: 1fr 1fr; was changed for display: grid;
             grid-template-columns: repeat(2, 1fr);
         }       
     }
@@ -95,7 +95,7 @@
         .project_detail {
             &_images { 
                 width: 50vw;
-                -ms-grid-column: 1fr 1fr 1fr;
+                display: grid; // Note: 2. Display GRID:  -ms-grid-column: 1fr 1fr 1fr; was changed for display: grid;
                 grid-template-columns: repeat(3, 1fr);
             }
         }

@@ -70,7 +70,8 @@
        display: -ms-grid;
        display: grid;
        grid-template-columns: repeat(2, 1fr);
-       -ms-grid-column: 1fr 1fr;
+    // -ms-grid-column: 1fr 1fr;
+        display: grid; // Note: 3. Display GRID: -ms-grid-column: 1fr 1fr; was changed for display: grid;        
        align-items: center;
        text-align: center;
 
